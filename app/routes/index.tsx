@@ -2,7 +2,6 @@ import type { MetaFunction, LoaderFunction } from "remix";
 import { useLoaderData, json, Link } from "remix";
 
 type IndexData = {
-  resources: Array<{ name: string; url: string }>;
   demos: Array<{ name: string; to: string }>;
 };
 
@@ -12,20 +11,6 @@ type IndexData = {
 // https://remix.run/api/conventions#loader
 export let loader: LoaderFunction = () => {
   let data: IndexData = {
-    resources: [
-      {
-        name: "Remix Docs",
-        url: "https://remix.run/docs"
-      },
-      {
-        name: "React Router Docs",
-        url: "https://reactrouter.com/docs"
-      },
-      {
-        name: "Remix Discord",
-        url: "https://discord.gg/VBePs6d"
-      }
-    ],
     demos: [
       {
         to: "demos/actions",
@@ -49,8 +34,8 @@ export let loader: LoaderFunction = () => {
 // https://remix.run/api/conventions#meta
 export let meta: MetaFunction = () => {
   return {
-    title: "Remix Starter",
-    description: "Welcome to remix!"
+    title: "tubone24",
+    description: "Welcome to tubone24 showcase!"
   };
 };
 
@@ -61,18 +46,12 @@ export default function Index() {
   return (
     <div className="remix__page">
       <main>
-        <h2>Welcome to Remix!</h2>
-        <p>We're stoked that you're here. 🥳</p>
+        <h2>Welcome to tubone24 showcase!</h2>
         <p>
-          Feel free to take a look around the code to see how Remix does things,
-          it might be a bit different than what you’re used to. When you're
-          ready to dive deeper, we've got plenty of resources to get you
-          up-and-running quickly.
+          Apppppp!!!
         </p>
         <p>
-          Check out all the demos in this starter, and then just delete the{" "}
-          <code>app/routes/demos</code> and <code>app/styles/demos</code>{" "}
-          folders when you're ready to turn this into your next project.
+          aaapp!!!!!!
         </p>
       </main>
       <aside>
@@ -83,14 +62,6 @@ export default function Index() {
               <Link to={demo.to} prefetch="intent">
                 {demo.name}
               </Link>
-            </li>
-          ))}
-        </ul>
-        <h2>Resources</h2>
-        <ul>
-          {data.resources.map(resource => (
-            <li key={resource.url} className="remix__page__resource">
-              <a href={resource.url}>{resource.name}</a>
             </li>
           ))}
         </ul>
