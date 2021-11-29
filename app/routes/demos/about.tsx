@@ -5,7 +5,7 @@ import stylesUrl from "~/styles/demos/about.css";
 
 export let meta: MetaFunction = () => {
   return {
-    title: "About Remix"
+    title: "About tubone24"
   };
 };
 
@@ -17,24 +17,18 @@ export default function Index() {
   return (
     <div className="about">
       <div className="about__intro">
-        <h2>About Us</h2>
+        <h2>About tubone24</h2>
         <p>
-          Ok, so this page isn't really <em>about us</em>, but we did want to
-          show you a few more things Remix can do.
+          I'm a Software and Infrastructure developer with over 5+ years, and I've been leading some engineering teams in recent years.
         </p>
         <p>
-          Did you notice that things look a little different on this page? The
-          CSS that we import in the route file and include in its{" "}
-          <code>links</code> export is only included on this route and its
-          children.
+          Expert at AWS by using Server-less architecture. Also a master of Server-side API and Batch with Python.
         </p>
         <p>
-          Wait a sec...<em>its children</em>? To understand what we mean by
-          this,{" "}
-          <a href="https://remix.run/tutorial/4-nested-routes-params">
-            read all about nested routes in the docs
-          </a>
-          .
+          Additionally, experienced data science with Python and AWS.
+        </p>
+        <p>
+          I have lectured at AWS Summit Tokyo 19 with company booth. I have AWS Certified Solution Architect – Professional.
         </p>
         <hr />
         <Outlet />
