@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "2.2.2",
-    "@remix-run/dev": "1.0.5",
+    "@remix-run/dev": "1.4.3",
     "@types/react": "17.0.37",
     "@types/react-dom": "17.0.11",
     "esbuild": "0.13.14",
